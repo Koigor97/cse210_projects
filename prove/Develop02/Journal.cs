@@ -45,13 +45,13 @@ public class Journal
         
             if (choice == "y")
             {
-                File.AppendAllText(file[option - 1], $"{content}\n");
+                File.AppendAllText(file[option - 1], $" {content}\n");
                 Console.WriteLine("\nYour entry has been saved 📥");
                 break;
             } 
             else if (choice == "n")
             {  
-                File.AppendAllText(file[option - 1], $"\n{content}");
+                File.AppendAllText(file[option - 1], $"{content}");
                 Console.WriteLine("\nLet's go 🚵🏼‍♀️:\n");
                 content = Console.ReadLine();
             }

@@ -13,7 +13,7 @@ public class Display
     public string [] CurrentFiles()
     {
         int indexNum = 0;  
-        var files = Directory.GetFiles(_filePath);
+        var files = Directory.GetFiles(_filePath); 
         Console.WriteLine("These are the files 📑 in your Journal Folder 🗂️:");
         foreach (string file in files)    
         {
